@@ -1,63 +1,67 @@
 import random
 
 
-board = [['' for _ in range(9)] for _ in range(9)]   # generating an empty board
+# Generate an empty board
+board = [['' for _ in range(9)] for _ in range(9)]
 
-def get_square_number (line, column):
-  ''' Function to, given a certain cell, return the square it belongs '''
+def get_square_number(line, column):
+  ''' Get the square number for a given cell. Squares are numbered from 0 to 8, from left to right and top to bottom. '''
 
   return (3*(line//3)) + (column//3)
 
-def get_square (square_number):
-
-  ''' Function to return a 3X3 square as a list, given it's number '''
+def get_square(square_number):
+  ''' Get the cells for a given square number, as a list. The cells are ordered from left to right and top to bottom. '''
 
   line_start = 3 * (square_number//3)
-
   column_start = 3 * (square_number%3)
+  
+  # Extract the cells from the board and concatenate them to form the square
+  return board[line_start][column_start:column_start+3] + \
+         board[line_start+1][column_start:column_start+3] + \
+         board[line_start+2][column_start:column_start+3]
 
-  return board[line_start][column_start:column_start+3] + board[line_start+1][column_start:column_start+3] + board[line_start+2][column_start:column_start+3]
+def get_column(column):
+  ''' Get the values for a given column as a list. The values are ordered from top to bottom. '''
 
-def get_cols(column):
-  ''' Function to return a certain column of the board as a list '''
+  return [board[row][column] for row in range(len(board))]
 
-  return [board[x][column] for x in range(len(board))]
+def get_valid_numbers(line=0, column=0):
+  ''' Get a list of valid numbers that can be placed in a given cell. '''
 
-def get_valid_numbers (line=0, column=0):
-  return [x for x in range(1, 10) if x not in get_cols(column) and x not in get_square(get_square_number(line, column)) and x not in board[line]]
+  # The valid numbers are those that don't appear in the cell's row, column or square
+  return [x for x in range(1, 10) if x not in get_column(column) and \
+          x not in get_square(get_square_number(line, column)) and x not in board[line]]
 
 def recursive_fill(line=0, column=0):
+  ''' Recursively fill the board with valid numbers. '''
 
   valid_numbers = get_valid_numbers(line, column)
   random.shuffle(valid_numbers)
 
+  # If there are no valid numbers, return False to indicate that the current path doesn't lead to a solution
   if valid_numbers == []:
-    return False  # That means that there are no valid numbers for filling this cell and the algorithm should return to the previous recursive call
+    return False
 
-  board[line][column] = valid_numbers.pop(0)  # The board[line][column] is randomly filled
+  # Try each valid number in a random order until a solution is found
+  while valid_numbers:
+    number = valid_numbers.pop(0)
+    board[line][column] = number
 
-  if line == 8 and column == 8:
-   return True  # Breaking condition for the recursive function. If it's the last cell of the board the base case is reached and we're done!
-  else:
-    if column != 8:
-      x = recursive_fill(line, column+1)  # The function calls itself recursively for filling the next cell
-    else:
-      x = recursive_fill(line+1, 0)
+    # If this is the last cell, we have found a solution and can stop searching
+    if line == 8 and column == 8:
+      return True
 
-    while not x and valid_numbers:  # While there are still valid numbers, since the next comming call was not successful, try again!
-      board[line][column] = valid_numbers.pop(0)
+    # Otherwise, move to the next cell and continue the search
+    next_line, next_column = (line, column + 1) if column != 8 else (line + 1, 0)
+    if recursive_fill(next_line, next_column):
+      return True
 
-      if column != 8:
-        x = recursive_fill(line, column+1)
-      else:
-        x = recursive_fill(line+1, 0)
+  # If none of the valid numbers led to a solution, backtrack and try again
+  board[line][column] = ''
+  return False
 
-    if x:
-      return True  # board[line][column] was successfully filled and the next calls also succeded (Going back home after the job is done...)
-    else:
-      board[line][column] = ''
-      return False  # Some posterior call couldn't fill their cells...rollback needed (the function goes back to the previous call. It should pick another number for the previous cell)
-
+# Fill the board recursively and print the result
 recursive_fill()
 for line in board:
   print(line)
+
