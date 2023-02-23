@@ -1,6 +1,6 @@
 # Exercises
 
-Python
+## Python
 
 1 - grep like search
 
@@ -9,16 +9,16 @@ Python
 3 - 
 
 
-Elixir
+## Elixir
 
 1 - Functional sudoku
 
 
-Java
+## Java
 
 1 - 
 
 
-C
+## C
 
 1 - 
