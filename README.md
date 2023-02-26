@@ -21,7 +21,7 @@ This is a set of some programming exercises based on real world problems.
 
 ### Java
 
-  1.<details><summary>Plant Growth Simulation with Genetic Algorithms</summary><p>This exercise involves creating a program to simulate the growth patterns of plants using genetic algorithms. Genetic algorithms are search algorithms that can be used to find optimal solutions to complex problems. The program should use genetic algorithms to simulate the growth of plants over time, taking into account factors such as sunlight, nutrients, and water, and optimize the growth patterns to maximize plant growth and yield.</p></details>
+  1. <details><summary>Plant Growth Simulation with Genetic Algorithms</summary><p>This exercise involves creating a program to simulate the growth patterns of plants using genetic algorithms. Genetic algorithms are search algorithms that can be used to find optimal solutions to complex problems. The program should use genetic algorithms to simulate the growth of plants over time, taking into account factors such as sunlight, nutrients, and water, and optimize the growth patterns to maximize plant growth and yield.</p></details>
 
 
 ### C
