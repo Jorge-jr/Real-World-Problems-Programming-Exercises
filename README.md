@@ -23,13 +23,3 @@ This is a set of some programming exercises based on real world problems.
 ### C
 
 1.<details><summary></summary><p></p></details>
-
-
-  
-## References
-
-  <a href="http://www.youtube.com/watch?feature=player_embedded&v=9o4-dn0WE6Q
-" target="_blank"><img src="http://img.youtube.com/vi/9o4-dn0WE6QE/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
-  
-  https://www.youtube.com/watch?v=9o4-dn0WE6Q
