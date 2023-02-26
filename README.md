@@ -8,7 +8,7 @@ This is a set of some programming exercises based on real world problems.
 4. <details><summary>Hamming code</summary><p><p>This exercise involves implementing a Hamming code encoder and decoder. Hamming codes are a type of error-correcting code used in digital communications to detect and correct errors that may occur during transmission.</p><p>Reference: https://www.youtube.com/watch?v=X8jsijhllIA&t=331s </p></details>
 5. <details><summary>Function roots with Newton's method</summary><p>This exercise involves writing a program to find the root of a given function using the Newton's method. The goal is to create an algorithm that can approximate the root of a function with high accuracy.</p></details>
 6. <details><summary>Fractal Plant</summary><p>This exercise involves creating a program to generate a fractal plant using L-systems. An L-system is a mathematical model that can be used to describe the growth patterns of plants. The program should take as input an L-system string and use it to generate a fractal plant with branches, leaves, and flowers.</p></details>
-
+7. <details><summary>Wi-fi presence indicator</summary><p>This exercise involves creating a program that uses sniffers to detect the presence or absence and the radio signal received power of Wi-Fi signals from nearby devices and uses this information to determine the occupancy status of a location.</p></details>
 
 
 ### Elixir
@@ -18,13 +18,29 @@ This is a set of some programming exercises based on real world problems.
 3. <details><summary>Cellular Automata for Plant Growth</summary><p>This exercise involves creating a program to simulate the growth patterns of plants using cellular automata. Cellular automata are mathematical models that can be used to simulate the behavior of complex systems. The program should use cellular automata to simulate the growth of plants over time, taking into account factors such as sunlight, nutrients, and water.</p></details>
 
 
-
 ### Java
 
 1. <details><summary>Plant Growth Simulation with Genetic Algorithms</summary><p>This exercise involves creating a program to simulate the growth patterns of plants using genetic algorithms. Genetic algorithms are search algorithms that can be used to find optimal solutions to complex problems. The program should use genetic algorithms to simulate the growth of plants over time, taking into account factors such as sunlight, nutrients, and water, and optimize the growth patterns to maximize plant growth and yield.</p></details>
-  2. <details><summary>Packman game variation</summary><p></p></details>
+  2. <details><summary>Packman game variation</summary><p></p></details> <!--- packman and ghosts with superpowers (shoot, cross walls, invisible, become ghost) -->
 
-
+<!--
 ### C
 
 1. <details><summary></summary><p></p></details>
+
+
+### Javascript
+
+
+### R
+
+
+### Rust
+
+
+
+### Go
+
+
+
+-->
