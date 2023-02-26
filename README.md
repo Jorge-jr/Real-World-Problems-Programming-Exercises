@@ -26,4 +26,4 @@ This is a set of some programming exercises based on real world problems.
 
 ### C
 
-1.<details><summary></summary><p></p></details>
+1. <details><summary></summary><p></p></details>
