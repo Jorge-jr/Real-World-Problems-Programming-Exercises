@@ -15,13 +15,14 @@ This is a set of some programming exercises based on real world problems.
 
 1. <details><summary>Functional sudoku</summary><p>This exercise involves creating a program to solve a Sudoku puzzle using functional programming principles in Elixir. The program should be able to generate random Sudoku puzzles and solve them using a recursive algorithm.</p></details>
 2. <details><summary>Pi's value with parallel Monte Carlo method</summary><p>This exercise involves approximating the value of Pi using the Monte Carlo method in a parallel way with Elixir. The program should generate a large number of random points within the unit square, calculate the distance of each point to the origin, and then use the ratio of the number of points inside the unit circle to the total number of points generated to approximate the value of Pi. The program should use parallelism to speed up the calculations.</p></details>
-  3. <details><summary>Cellular Automata for Plant Growth</summary><p>This exercise involves creating a program to simulate the growth patterns of plants using cellular automata. Cellular automata are mathematical models that can be used to simulate the behavior of complex systems. The program should use cellular automata to simulate the growth of plants over time, taking into account factors such as sunlight, nutrients, and water.</p></details>
+3. <details><summary>Cellular Automata for Plant Growth</summary><p>This exercise involves creating a program to simulate the growth patterns of plants using cellular automata. Cellular automata are mathematical models that can be used to simulate the behavior of complex systems. The program should use cellular automata to simulate the growth of plants over time, taking into account factors such as sunlight, nutrients, and water.</p></details>
 
 
 
 ### Java
 
-  1. <details><summary>Plant Growth Simulation with Genetic Algorithms</summary><p>This exercise involves creating a program to simulate the growth patterns of plants using genetic algorithms. Genetic algorithms are search algorithms that can be used to find optimal solutions to complex problems. The program should use genetic algorithms to simulate the growth of plants over time, taking into account factors such as sunlight, nutrients, and water, and optimize the growth patterns to maximize plant growth and yield.</p></details>
+1. <details><summary>Plant Growth Simulation with Genetic Algorithms</summary><p>This exercise involves creating a program to simulate the growth patterns of plants using genetic algorithms. Genetic algorithms are search algorithms that can be used to find optimal solutions to complex problems. The program should use genetic algorithms to simulate the growth of plants over time, taking into account factors such as sunlight, nutrients, and water, and optimize the growth patterns to maximize plant growth and yield.</p></details>
+  2. <details><summary>Packman game variation</summary><p></p></details>
 
 
 ### C
