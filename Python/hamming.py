@@ -19,7 +19,6 @@ def encode_hamming_code(data, total_bits=7, data_bits=4):
 
     for block in encoded_data:
         result += compute_parity_bits(block)
-
     return "".join(result)
 
 
@@ -55,7 +54,6 @@ def check_hamming_block(data, total_bits=7, data_bits=4):
             data[error_index] = "1"
         else:
             data[error_index] = "0"
-
     return ''.join(data)
 
 
@@ -71,7 +69,6 @@ def compute_parity_bits(data, parity_size=3):
             check_sum += int(data[check_index])
         data[parity_index-1] = str(check_sum % 2)
         parity_checker = parity_checker << 1
-
     return data
 
 

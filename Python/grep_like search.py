@@ -13,6 +13,7 @@ def grep(txt: str, reg: str, index: int = 0,
     else:
         return grep(txt, reg, index+1)
 
+
 grep_res = grep(sample_txt[:100], word)
 print(grep_res)
 print('_' * grep_res + '\|/' + '_' * (len(sample_txt) - grep_res - 3) + '\n', sample_txt + '\n')
