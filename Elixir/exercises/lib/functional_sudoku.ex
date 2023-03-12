@@ -34,7 +34,6 @@ defmodule Exercises.FunctionalSudoku do
   defp do_fill_board(board, {row, 9}), do: do_fill_board(board, {row+1, 0})
   defp do_fill_board(board, {row, 9}, exclude), do: do_fill_board(board, {row+1, 0})
   defp do_fill_board(board, {row, column}, exclude\\[]) do
-    IO.inspect({row, column})
     value = choose_value(board, {row, column}, Enum.shuffle(get_valid_numbers(board, {row, column})))
     if :no_valid_numbers == value do
       {:error, exclude ++ [get_value(board, {row, column-1})]}
@@ -42,9 +41,9 @@ defmodule Exercises.FunctionalSudoku do
       case do_fill_board(set_value(board, {row, column}, value), {row, column+1}) do
         {:ok, new_board} -> {:ok, new_board}
         {:error, new_exclude} ->
-          case get_valid_numbers(board, {row, column}, new_exclude) do
+          case choose_value(board, {row, column}, Enum.shuffle(get_valid_numbers(board, {row, column}, new_exclude))) do
             :no_valid_numbers -> {:error, exclude ++ [get_value(board, {row, column-1})]}
-            new_value -> do_fill_board(set_value(board, {row, column}, new_value), {row, column+1}, new_exclude)
+            new_value -> do_fill_board(set_value(board, {row, column}, new_value), {row, column+1})
           end
       end
     end
@@ -79,6 +78,7 @@ defmodule Exercises.FunctionalSudoku do
   def choose_value(_board, {_row, _column}, []), do: :no_valid_numbers
   def choose_value(board, {row, column}, [head|tail]) do
     cond do
+      column == 8 -> head
       get_valid_numbers(set_value(board, {row, column}, head), {row, column+1}) == [] -> choose_value(board, {row, column}, tail)
       true -> head
     end
