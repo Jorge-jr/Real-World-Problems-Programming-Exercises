@@ -9,6 +9,7 @@ This is a set of some programming exercises based on real world problems.
 5. <details><summary>Function roots with Newton's method</summary><p>This exercise involves writing a program to find the root of a given function using the Newton's method. The goal is to create an algorithm that can approximate the root of a function with high accuracy.</p></details>
 6. <details><summary>Fractal Plant</summary><p>This exercise involves creating a program to generate a fractal plant using L-systems. An L-system is a mathematical model that can be used to describe the growth patterns of plants. The program should take as input an L-system string and use it to generate a fractal plant with branches, leaves, and flowers.</p></details>
 7. <details><summary>Wi-fi presence indicator</summary><p>This exercise involves creating a program that uses sniffers to detect the presence or absence and the radio signal received power of Wi-Fi signals from nearby devices and uses this information to determine the occupancy status of a location.</p></details>
+8. <details><summary>Matrix exponentiation</summary><p></p></details>
 
 
 ### Elixir
