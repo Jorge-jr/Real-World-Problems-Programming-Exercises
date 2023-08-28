@@ -26,6 +26,8 @@ This is a set of some programming exercises based on real world problems.
 1. <details><summary>Plant Growth Simulation with Genetic Algorithms</summary><p>This exercise involves creating a program to simulate the growth patterns of plants using genetic algorithms. Genetic algorithms are search algorithms that can be used to find optimal solutions to complex problems. The program should use genetic algorithms to simulate the growth of plants over time, taking into account factors such as sunlight, nutrients, and water, and optimize the growth patterns to maximize plant growth and yield.</p></details>
 2. <details><summary>Packman game variation</summary><p></p></details> <!--- packman and ghosts with superpowers (shoot, cross walls, invisible, become ghost) -->
 3. <details><summary>Gantt Chart Creation</summary><p>Develop a program to create a gantt chart with the information of a project and its tasks.</p></details>
+3. <details><summary>Gantt Chart Creation</summary><p>Develop a program to create a gantt chart with the information of a project and its tasks.</p></details>
+3. <details><summary>Graph Sudoku</summary><p></p></details>
 <!--
 ### C
 
