@@ -28,6 +28,10 @@ This is a set of some programming exercises based on real world problems.
 3. <details><summary>Gantt Chart Creation</summary><p>Develop a program to create a gantt chart with the information of a project and its tasks.</p></details>
 3. <details><summary>Gantt Chart Creation</summary><p>Develop a program to create a gantt chart with the information of a project and its tasks.</p></details>
 3. <details><summary>Graph Sudoku</summary><p></p></details>
+
+### Perl
+
+1. <details><summary>URL Shortener</summary><p></p></details>
 <!--
 ### C
 
