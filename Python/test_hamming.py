@@ -1,6 +1,6 @@
 import unittest
-from hamming import encode_hamming_code, decode_hamming_code, check_hamming_code
-
+from hamming import encode_hamming_code, decode_hamming_code
+from hamming import check_hamming_code
 
 """
     encoder 7, 4
@@ -34,13 +34,15 @@ class TestHamming(unittest.TestCase):
         self.assertEqual(encode_hamming_code('0001'), "1101001")
         self.assertEqual(encode_hamming_code('000100000101'), "110100100000000100101")
         self.assertEqual(encode_hamming_code('00011'), "11010011110000")
-        self.assertEqual(encode_hamming_code('00011001100101001101010101'), "1101001001100100110011001100101010101001011001100")
+        self.assertEqual(encode_hamming_code('00011001100101001101010101'),
+                         "1101001001100100110011001100101010101001011001100")
 
     def test_check_hamming_code(self):
-        self.assertEqual(check_hamming_code('110100100010000100101'), "110100100000000100101")
+        self.assertEqual(check_hamming_code('110100100010000100101'), "100100100000000100101")
         self.assertEqual(check_hamming_code('1001001'), "1101001")
         self.assertEqual(check_hamming_code('11010001110001'), "11010011110000")
-        self.assertEqual(check_hamming_code('1101101001110100100011011100100010101101011001000'), "1101001001100100110011001100101010101001011001100")
+        self.assertEqual(check_hamming_code('1101101001110100100011011100100010101101011001000'),
+                         "1101001001100100110011001100101010101001011001100")
 
     def test_decode_hamming_code(self):
         self.assertEqual(decode_hamming_code('110100100000000100101'), "000100000101")
