@@ -19,6 +19,11 @@ This is a set of some programming exercises based on real world problems.
 3. <details><summary>Cellular Automata for Plant Growth</summary><p>This exercise involves creating a program to simulate the growth patterns of plants using cellular automata. Cellular automata are mathematical models that can be used to simulate the behavior of complex systems. The program should use cellular automata to simulate the growth of plants over time, taking into account factors such as sunlight, nutrients, and water.</p></details>
 
 4. <details><summary>Wi-Fi Signal Quality Analyzer</summary><p> This exercise involves creating a program that analyzes the quality of Wi-Fi signals in a given area. The program should use a Wi-Fi adapter to scan for nearby networks and measure the signal quality (e.g. signal-to-noise ratio, interference level) of each network. The program should then use this data to identify potential sources of interference or other factors that may affect Wi-Fi performance. This exercise could be extended by adding features such as automated troubleshooting or network optimization recommendations.</p></details>
+
+4. <details><summary>Wi-Fi Signal Quality Analyzer</summary><p> This exercise involves creating a program that analyzes the quality of Wi-Fi signals in a given area. The program should use a Wi-Fi adapter to scan for nearby networks and measure the signal quality (e.g. signal-to-noise ratio, interference level) of each network. The program should then use this data to identify potential sources of interference or other factors that may affect Wi-Fi performance. This exercise could be extended by adding features such as automated troubleshooting or network optimization recommendations.</p></details>
+
+5. <details><summary>Network Simulation tool</summary><p> .</p></details>
+https://codingchallenges.substack.com/p/coding-challenge-38-network-modelling
   
 
 ### Java
